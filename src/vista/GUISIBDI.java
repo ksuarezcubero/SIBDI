@@ -42,6 +42,7 @@ public class GUISIBDI extends javax.swing.JFrame {
         jmiBusqueda = new javax.swing.JMenuItem();
         jmiPrestamos = new javax.swing.JMenuItem();
         jmiDevoluciones = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -91,6 +92,9 @@ public class GUISIBDI extends javax.swing.JFrame {
         jmRegistro.add(jmiDevoluciones);
 
         barraMenu.add(jmRegistro);
+
+        jMenu2.setText("jMenu2");
+        barraMenu.add(jMenu2);
 
         setJMenuBar(barraMenu);
 
@@ -165,6 +169,7 @@ public class GUISIBDI extends javax.swing.JFrame {
     private javax.swing.JMenuBar barraMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jmArchivo;
     private javax.swing.JMenu jmRegistro;
     private javax.swing.JMenuItem jmiBusqueda;
