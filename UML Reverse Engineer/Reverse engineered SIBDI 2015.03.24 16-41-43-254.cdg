@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Reverse engineered SIBDI 2015.03.24 16-41-43-254">
+  <ClassDiagramComponents>
+    <Class xPosition="20.0" yPosition="20.0" package="vista" name="GUIBusqueda" visibility="public">
+      <Constructors>
+        <Constructor name="GUIBusqueda" visibility="public">
+          <Argument type="RegistroLibro" name="registro"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="control" visibility="private" type="ControlGUIBusqueda"/>
+        <Field name="btnBuscar" visibility="private" type="javax.swing.JButton"/>
+        <Field name="cbxFiltro" visibility="private" type="javax.swing.JComboBox"/>
+        <Field name="jLabel1" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel2" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="pnlTabla" visibility="private" type="vista.PanelTablaFiltro"/>
+        <Field name="txtBusqueda" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="BTNB_BUSCAR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="addEscucha" visibility="public" returnType="void">
+          <Argument type="ControlGUIBusqueda" name="control"/>
+        </Method>
+        <Method name="setTxtBusqueda" visibility="public" returnType="void">
+          <Argument type="String" name="busqueda"/>
+        </Method>
+        <Method name="getTxtBusqueda" visibility="public" returnType="String"/>
+        <Method name="getCombo" visibility="public" returnType="JComboBox"/>
+        <Method name="getPanel" visibility="public" returnType="PanelTablaFiltro"/>
+        <Method name="mensage" visibility="public" returnType="void">
+          <Argument type="String" name="mensaje"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="20.0" package="vista" name="GUILibro" visibility="public">
+      <Constructors>
+        <Constructor name="GUILibro" visibility="public">
+          <Argument type="RegistroLibro" name="registro"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="controlador" visibility="private" type="controlador.ControlLibro"/>
+        <Field name="panelBotones1" visibility="private" type="vista.PanelBotones"/>
+        <Field name="panelDataLibro" visibility="private" type="vista.PanelDataLibro"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="mensaje" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String" name="mensaje"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="20.0" package="vista" name="GUIReporte" visibility="public">
+      <Constructors>
+        <Constructor name="GUIReporte" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="btnAtras" visibility="private" type="javax.swing.JButton"/>
+        <Field name="jLabel1" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="panelTabla1" visibility="private" type="vista.PanelTabla"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="btnAtrasActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="getPanelTabla" visibility="public" returnType="PanelTabla"/>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="20.0" package="vista" name="PanelBotones" visibility="public">
+      <Constructors>
+        <Constructor name="PanelBotones" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="btnAgregar" visibility="private" type="javax.swing.JButton"/>
+        <Field name="btnConsutar" visibility="private" type="javax.swing.JButton"/>
+        <Field name="btnEliminar" visibility="private" type="javax.swing.JButton"/>
+        <Field name="btnModificar" visibility="private" type="javax.swing.JButton"/>
+        <Field name="btnSalir" visibility="private" type="javax.swing.JButton"/>
+        <Field name="BTN_AGREGAR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="BTN_MODIFICAR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="BTN_ELIMINAR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="BTN_CONSULTAR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="BTN_SALIR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="escuchar" visibility="public" returnType="void">
+          <Argument type="ControlLibro" name="control"/>
+        </Method>
+        <Method name="enabledBotones" visibility="public" returnType="void">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="420.0" package="vista" name="PanelTablaFiltro" visibility="public">
+      <Constructors>
+        <Constructor name="PanelTablaFiltro" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jScrollPane1" visibility="private" type="javax.swing.JScrollPane"/>
+        <Field name="jTable1" visibility="private" type="javax.swing.JTable"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="llenarTabla" visibility="public" returnType="void">
+          <Argument type="String[][]" name="lista"/>
+          <Argument type="String[]" name="etiquetas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="420.0" package="vista" name="GUISIBDI" visibility="public">
+      <Constructors>
+        <Constructor name="GUISIBDI" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="barraMenu" visibility="private" type="javax.swing.JMenuBar"/>
+        <Field name="jLabel1" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jMenu1" visibility="private" type="javax.swing.JMenu"/>
+        <Field name="jmArchivo" visibility="private" type="javax.swing.JMenu"/>
+        <Field name="jmRegistro" visibility="private" type="javax.swing.JMenu"/>
+        <Field name="jmiBusqueda" visibility="private" type="javax.swing.JMenuItem"/>
+        <Field name="jmiDevoluciones" visibility="private" type="javax.swing.JMenuItem"/>
+        <Field name="jmiLibros" visibility="private" type="javax.swing.JMenuItem"/>
+        <Field name="jmiPrestamos" visibility="private" type="javax.swing.JMenuItem"/>
+        <Field name="jmiSalir" visibility="private" type="javax.swing.JMenuItem"/>
+        <Field name="MENU_SALIR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="MENU_LIBRO" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="MENU_PRESTAMOS" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="MENU_DEVOLUCIONES" visibility="public" type="String" isStatic="true" isFinal="true"/>
+        <Field name="MENU_BUSQUEDA" visibility="public" type="String" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="jmiSalirActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiLibrosActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiBusquedaActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="escucharMenu" visibility="public" returnType="void">
+          <Argument type="ActionListener" name="control"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="420.0" package="vista" name="PanelDataLibro" visibility="public">
+      <Constructors>
+        <Constructor name="PanelDataLibro" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="listaCategoria" visibility="private" type="String[]"/>
+        <Field name="btnBuscar" visibility="private" type="javax.swing.JButton"/>
+        <Field name="cboxCategoria" visibility="private" type="javax.swing.JComboBox"/>
+        <Field name="jLabel1" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel2" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel3" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel4" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel5" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel6" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jLabel7" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="txtAutor" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="txtEdicion" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="txtEditorial" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="txtID" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="txtTitulo" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="BTN_BUSCAR" visibility="public" type="String" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="getTxtID" visibility="public" returnType="String"/>
+        <Method name="getTxtAutor" visibility="public" returnType="String"/>
+        <Method name="getTxtEdicion" visibility="public" returnType="String"/>
+        <Method name="getTxtEditorial" visibility="public" returnType="String"/>
+        <Method name="getTxtTitulo" visibility="public" returnType="String"/>
+        <Method name="getTxtCategoria" visibility="public" returnType="String"/>
+        <Method name="setTxtID" visibility="public" returnType="void">
+          <Argument type="String" name="iD"/>
+        </Method>
+        <Method name="setTxtTitulo" visibility="public" returnType="void">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="setTxtAutor" visibility="public" returnType="void">
+          <Argument type="String" name="autor"/>
+        </Method>
+        <Method name="setTxtEdicion" visibility="public" returnType="void">
+          <Argument type="String" name="edicion"/>
+        </Method>
+        <Method name="setTxtEditorial" visibility="public" returnType="void">
+          <Argument type="String" name="editorial"/>
+        </Method>
+        <Method name="setTxtCategoria" visibility="public" returnType="void">
+          <Argument type="String" name="categoria"/>
+        </Method>
+        <Method name="limpiarCampos" visibility="public" returnType="void"/>
+        <Method name="escucharBuscar" visibility="public" returnType="void">
+          <Argument type="ActionListener" name="control"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="420.0" package="vista" name="PanelTabla" visibility="public">
+      <Constructors>
+        <Constructor name="PanelTabla" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jScrollPane1" visibility="private" type="javax.swing.JScrollPane"/>
+        <Field name="jTable1" visibility="private" type="javax.swing.JTable"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="llenarTabla" visibility="public" returnType="void">
+          <Argument type="String[][]" name="listaData"/>
+          <Argument type="String[]" name="etiquetas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="820.0" package="modelo" name="Libro" visibility="public">
+      <Constructors>
+        <Constructor name="Libro" visibility="public">
+          <Argument type="String" name="titulo"/>
+          <Argument type="String" name="autor"/>
+          <Argument type="String" name="iD"/>
+          <Argument type="String" name="edicion"/>
+          <Argument type="String" name="editorial"/>
+          <Argument type="String" name="categoria"/>
+        </Constructor>
+        <Constructor name="Libro" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="titulo" visibility="private" type="String"/>
+        <Field name="autor" visibility="private" type="String"/>
+        <Field name="iD" visibility="private" type="String"/>
+        <Field name="edicion" visibility="private" type="String"/>
+        <Field name="editorial" visibility="private" type="String"/>
+        <Field name="categoria" visibility="private" type="String"/>
+        <Field name="etiquetas" visibility="private" type="String[]" isStatic="true"/>
+      </Fields>
+      <Methods>
+        <Method name="getEtiquetas" visibility="public" returnType="String[]" isStatic="true"/>
+        <Method name="getTamanno" visibility="public" returnType="int" isStatic="true"/>
+        <Method name="datos" visibility="public" returnType="String">
+          <Argument type="int" name="posicion"/>
+        </Method>
+        <Method name="getTitulo" visibility="public" returnType="String"/>
+        <Method name="setTitulo" visibility="public" returnType="void">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getAutor" visibility="public" returnType="String"/>
+        <Method name="setAutor" visibility="public" returnType="void">
+          <Argument type="String" name="autor"/>
+        </Method>
+        <Method name="getiD" visibility="public" returnType="String"/>
+        <Method name="setiD" visibility="public" returnType="void">
+          <Argument type="String" name="iD"/>
+        </Method>
+        <Method name="getEdicion" visibility="public" returnType="String"/>
+        <Method name="setEdicion" visibility="public" returnType="void">
+          <Argument type="String" name="edicion"/>
+        </Method>
+        <Method name="getEditorial" visibility="public" returnType="String"/>
+        <Method name="setEditorial" visibility="public" returnType="void">
+          <Argument type="String" name="editorial"/>
+        </Method>
+        <Method name="getCategoria" visibility="public" returnType="String"/>
+        <Method name="setCategoria" visibility="public" returnType="void">
+          <Argument type="String" name="categoria"/>
+        </Method>
+        <Method name="toString" visibility="public" returnType="String"/>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="820.0" package="modelo" name="RegistroEstudiante" visibility="public">
+      <Constructors/>
+      <Fields/>
+      <Methods/>
+    </Class>
+    <Class xPosition="620.0" yPosition="820.0" package="modelo" name="RegistroLibro" visibility="public">
+      <Constructors>
+        <Constructor name="RegistroLibro" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="listaLibros" visibility="private" type="ArrayList&lt;Libro&gt;"/>
+      </Fields>
+      <Methods>
+        <Method name="addBook" visibility="public" returnType="String">
+          <Argument type="Libro" name="libro"/>
+        </Method>
+        <Method name="verificarID" visibility="public" returnType="boolean">
+          <Argument type="String" name="iD"/>
+        </Method>
+        <Method name="buscarLibro" visibility="public" returnType="Libro">
+          <Argument type="String" name="ID"/>
+        </Method>
+        <Method name="eliminarLibro" visibility="public" returnType="String">
+          <Argument type="String" name="ID"/>
+        </Method>
+        <Method name="consultarLibros" visibility="public" returnType="String"/>
+        <Method name="getMatriz" visibility="public" returnType="String[][]"/>
+        <Method name="getFiltro" visibility="public" returnType="String[][]">
+          <Argument type="String" name="busqueda"/>
+          <Argument type="int" name="filtro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="820.0" package="modelo" name="Estudiante" visibility="public">
+      <Constructors>
+        <Constructor name="Estudiante" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="carnet"/>
+        </Constructor>
+        <Constructor name="Estudiante" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="nombre" visibility="private" type="String"/>
+        <Field name="carnet" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getNombre" visibility="public" returnType="String"/>
+        <Method name="setNombre" visibility="public" returnType="void">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getCarnet" visibility="public" returnType="String"/>
+        <Method name="setCarnet" visibility="public" returnType="void">
+          <Argument type="String" name="carnet"/>
+        </Method>
+        <Method name="toString" visibility="public" returnType="String"/>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="1220.0" package="controlador" name="ControlLibro" visibility="public">
+      <Constructors>
+        <Constructor name="ControlLibro" visibility="public">
+          <Argument type="PanelDataLibro" name="panelDataLibro"/>
+          <Argument type="PanelBotones" name="panelBotones"/>
+          <Argument type="RegistroLibro" name="registro"/>
+          <Argument type="GUILibro" name="guiLibro"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="panelData" visibility="private" type="PanelDataLibro"/>
+        <Field name="registro" visibility="private" type="RegistroLibro"/>
+        <Field name="panelBotones" visibility="private" type="PanelBotones"/>
+        <Field name="guiLibro" visibility="private" type="GUILibro"/>
+      </Fields>
+      <Methods>
+        <Method name="actionPerformed" visibility="public" returnType="void">
+          <Argument type="ActionEvent" name="evento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="1220.0" package="controlador" name="ControlGUIBusqueda" visibility="public">
+      <Constructors>
+        <Constructor name="ControlGUIBusqueda" visibility="public">
+          <Argument type="RegistroLibro" name="registro"/>
+          <Argument type="GUIBusqueda" name="busqueda"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="registro" visibility="private" type="RegistroLibro"/>
+        <Field name="busqueda" visibility="private" type="GUIBusqueda"/>
+      </Fields>
+      <Methods>
+        <Method name="actionPerformed" visibility="public" returnType="void">
+          <Argument type="ActionEvent" name="evento"/>
+        </Method>
+        <Method name="itemStateChanged" visibility="public" returnType="void">
+          <Argument type="ItemEvent" name="itemEvent"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="1220.0" package="controlador" name="ControlSIBDI" visibility="public">
+      <Constructors>
+        <Constructor name="ControlSIBDI" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="registroLibro" visibility="private" type="RegistroLibro"/>
+      </Fields>
+      <Methods>
+        <Method name="actionPerformed" visibility="public" returnType="void">
+          <Argument type="ActionEvent" name="evento"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="panelDataLibro" source="GUILibro" target="Libro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="GUIBusqueda" target="ControlGUIBusqueda" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="registroLibro" source="ControlSIBDI" target="RegistroLibro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="panelBotones" source="ControlLibro" target="PanelBotones" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="GUIReporte" target="PanelTabla" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaLibros" source="RegistroLibro" target="Libro" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List"/>
+    <UseRelation source="RegistroLibro" target="Libro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pnlTabla" source="GUIBusqueda" target="PanelTabla" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controlador" source="GUILibro" target="ControlLibro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="registro" source="ControlLibro" target="RegistroLibro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="registro" source="ControlGUIBusqueda" target="RegistroLibro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="panelTabla1" source="GUIReporte" target="PanelTabla" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="GUIBusqueda" target="ControlGUIBusqueda" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="panelBotones1" source="GUILibro" target="PanelBotones" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="GUIBusqueda" target="PanelTabla" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="PanelBotones" target="ControlLibro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="panelData" source="ControlLibro" target="Libro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="guiLibro" source="ControlLibro" target="Libro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="busqueda" source="ControlGUIBusqueda" target="GUIBusqueda" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
